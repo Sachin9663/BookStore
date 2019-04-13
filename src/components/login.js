@@ -1,12 +1,7 @@
 import React,{Component} from "react";
 import "./login.css";
 import User from "./user.json";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Redirect
-} from 'react-router-dom';
+
 class Login extends Component{
     constructor(props){
         super(props);
@@ -49,7 +44,6 @@ class Login extends Component{
     }
     render() {
         return(
-            <Router>
                 <div className="Content">
                     <div className='container'>
                         <h2>Login Here</h2>
@@ -59,6 +53,7 @@ class Login extends Component{
                                    onChange={this.handleChange}
                                    value={this.state.username}
                                    name='username'
+                                   autoComplete='off'
                             />
 
                             <input type="password"
@@ -73,8 +68,6 @@ class Login extends Component{
                         </form>
                     </div>
                 </div>
-            </Router>
-
         )
     }
 }

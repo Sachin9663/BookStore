@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link ,Redirect} from "react-router-dom"
 import './App.css';
 import Login from "./components/login";
 import Books from "./components/book";
+import Header from "./components/Header/header";
 
 class App extends Component {
     state = {isAuth: false}
@@ -15,6 +16,7 @@ class App extends Component {
   render() {
     return (
         <div>
+            <Header/>
             <Router>
                 <Route exact path={"/"}
                        render={(props) => <Login {...props}

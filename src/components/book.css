@@ -1,12 +1,14 @@
 
-.container{
+.container1{
+    font-family: 'Libre Baskerville';
     width: 90%;
     height: 500px;
     margin: 20px auto;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 3px;
+    display: -webkit-flex;
     display: flex;
-    background-color: antiquewhite;
+    background-color: #eceae7f5;
 }
 
 .nav{
@@ -16,9 +18,9 @@
     border-radius: 3px;
     margin: 20px 10px;
     padding: 10px 20px;
-    background-color: cyan;
+    background-color: white;
 }
-.content{
+.content1{
     width: 75%;
     height: 450px;
     border: 1px solid black;
@@ -29,4 +31,10 @@
 p{
     font-size: 20px;
     line-height: 25px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #000;
+    line-height: 40px;
 }

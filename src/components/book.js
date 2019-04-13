@@ -9,7 +9,7 @@ class Books extends Component{
     render() {
         const {match} =  this.props;
         return(
-            <div className='container'>
+            <div className='container1'>
                 <div className='nav'>
                     <h2>Book List</h2>
                     <ul>
@@ -20,7 +20,7 @@ class Books extends Component{
                         <li><Link to={`${match.path}/Hamlet`}> Hamlet </Link></li>
                     </ul>
                 </div>
-                <div className="content">
+                <div className="content1">
                     <Route path={`${match.path}/Don-Quixote`} component={Book1}/>
                     <Route path={`${match.path}/Ulysses`} component={Book2}/>
                     <Route path={`${match.path}/The-Great-Gatsby`} component={Book3}/>
@@ -32,9 +32,6 @@ class Books extends Component{
         )
 
     }
-
-
-
 }
 export default Books;
 
